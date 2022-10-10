@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <!-- one big div -->
+    <div id="container" style="margin-top:150px;">
+        <h1>Calculator App</h1>
+        <!-- div for text inputs -->
+
+        <div class="col-md-2" id="input">
+            <!-- Text input of numbers -->
+            <form>
+                <input readonly type="text" id="display1" class="form-control" value="">
+                <!-- another text input for solution -->
+                <input readonly type="text" id="display2" class="form-control" value="">
+            </form>
+        </div>
+
+        <!-- div for numbers -->
+        <div class="container-fluid" id="button-container">
+            <div class="row">
+                <!-- first layer of buttons -->
+                <div class="row buttons">
+                    <div class="col-sm-5">
+                        <input type="button" value="C"id="clear" class="btn btn-default btn-danger button clear" onclick="clearVal()">
+                        <input type="button" value="DEL" id="backspace" class="btn btn-default btn-warning button remove" onclick="erase()">
+                        <input type="button" id="ans" value="Ans" class="btn btn-default btn-secondary button operand" onclick="inputVal('Ans')">
+                        <input type="button" value="÷" id="operation" class="btn btn-default btn-secondary button operator" onclick="inputVal('/')">
+                    </div>
+                </div>
+                <!-- second layer -->
+                <div class="row buttons">
+                    <div class="col-sm-4">
+                        <input type="button" id="operation" value="7" class="btn btn-default btn-dark button operand" onclick="inputVal('7')">
+                        <input type="button" id="operation" value="8" class="btn btn-default btn-dark button operand" onclick="inputVal('8')">
+                        <input type="button" id="operation" value="9" class="btn btn-default btn-dark button operand" onclick="inputVal('9')">
+                        <input type="button" id="operation" value="×"
+                            class="btn btn-default btn-secondary button operator" onclick="inputVal('*')">
+                    </div>
+                </div>
+                <!-- third layer -->
+                <div class="row buttons">
+                    <div class="col-sm-4">
+                        <input type="button" id="operation" value="4" class="btn btn-default btn-dark button operand" onclick="inputVal('4')">
+                        <input type="button" id="operation" value="5" class="btn btn-default btn-dark button operand" onclick="inputVal('5')">
+                        <input type="button" id="operation" value="6" class="btn btn-default btn-dark button operand" onclick="inputVal('6')">
+                        <input type="button" id="operation" value="-"
+                            class="btn btn-default btn-secondary button operator">
+
+                    </div>
+                </div>
+                <!-- fourth layer -->
+                <div class="row buttons">
+                    <div class="col-sm-4">
+                        <input type="button" id="operation" value="1" class="btn btn-default btn-dark button operand" onclick="inputVal('1')">
+                        <input type="button" id="operation" value="2" class="btn btn-default btn-dark button operand" onclick="inputVal('2')">
+                        <input type="button" id="operation" value="3" class="btn btn-default btn-dark button operand" onclick="inputVal('3')">
+                        <input type="button" id="operation" value="+" class="btn btn-default btn-secondary operator" onclick="inputVal('+')">
+                    </div>
+                </div>
+                <!-- fifth layer -->
+                <div class="row buttons">
+                    <div class="col-sm-3">
+                        <input type="button" id="operation" value="0" class="btn btn-default btn-dark button" onclick="inputVal('0')">
+                        <input type="button" id="operation" value="." class="btn btn-default btn-dark button" onclick="inputVal('.')">
+                        <input type="button" id="operation" value="=" class="btn btn-default btn-success" onclick="calculate()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0713d65496.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
