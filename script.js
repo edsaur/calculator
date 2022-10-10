@@ -19,6 +19,8 @@ function erase() {
     if(presentNum !="") {
        $('#display1').val($('#display1').val().slice(0, -1))
     }
+
+    $('#display2').val("")
 }
 
 
