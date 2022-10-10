@@ -33,7 +33,7 @@
                     <div class="col-sm-5">
                         <input type="button" value="C"id="clear" class="btn btn-default btn-danger button clear" onclick="clearVal()">
                         <input type="button" value="DEL" id="backspace" class="btn btn-default btn-warning button remove" onclick="erase()">
-                        <input type="button" id="ans" value="Ans" class="btn btn-default btn-secondary button operand" onclick="inputVal('Ans')">
+                        <input type="button" id="ans" value="Ans" class="btn btn-default btn-secondary button operand" onclick="answer()">
                         <input type="button" value="÷" id="operation" class="btn btn-default btn-secondary button operator" onclick="inputVal('/')">
                     </div>
                 </div>
@@ -53,8 +53,7 @@
                         <input type="button" id="operation" value="4" class="btn btn-default btn-dark button operand" onclick="inputVal('4')">
                         <input type="button" id="operation" value="5" class="btn btn-default btn-dark button operand" onclick="inputVal('5')">
                         <input type="button" id="operation" value="6" class="btn btn-default btn-dark button operand" onclick="inputVal('6')">
-                        <input type="button" id="operation" value="-"
-                            class="btn btn-default btn-secondary button operator">
+                        <input type="button" id="operation" value="-" class="btn btn-default btn-secondary button operator" onclick="inputVal('-')">
 
                     </div>
                 </div>
